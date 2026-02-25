@@ -1,51 +1,46 @@
-// Clase Nodo para el árbol
-class Nodo {
+// clase NodoResiduo
+class NodoResiduo {
     String nombre;
-    Nodo izquierda;
-    Nodo derecha;
+    NodoResiduo izquierdo;
+    NodoResiduo derecho;
 
-    public Nodo(String nombre) {
+    public NodoResiduo(String nombre) {
         this.nombre = nombre;
-        this.izquierda = null;
-        this.derecha = null;
+        this.izquierdo = null;
+        this.derecho = null;
     }
 }
 
-public class ClasificacionResiduos {
+public class ClasificacionResiduos  {
+
     public static void main(String[] args) {
 
-        // Crear nodos del árbol
-        Nodo raiz = new Nodo("Residuos");
+        // crear nodos
+        NodoResiduo residuos = new NodoResiduo("Residuos");
 
-        Nodo organicos = new Nodo("Orgánicos");
-        Nodo inorganicos = new Nodo("Inorgánicos");
+        NodoResiduo organicos = new NodoResiduo("Organicos");
+        NodoResiduo inorganicos = new NodoResiduo("Inorganicos");
 
-        Nodo comida = new Nodo("Comida");
-        Nodo jardin = new Nodo("Jardín");
-        Nodo plastico = new Nodo("Plástico");
-        Nodo papel = new Nodo("Papel");
+        NodoResiduo comida = new NodoResiduo("Comida");
+        NodoResiduo jardin = new NodoResiduo("Jardin");
+        NodoResiduo plastico = new NodoResiduo("Plastico");
+        NodoResiduo papel = new NodoResiduo("Papel");
 
-        // Construir el árbol
-        raiz.izquierda = organicos;
-        raiz.derecha = inorganicos;
+        // construir el arbol
+        residuos.izquierdo = organicos;
+        residuos.derecho = inorganicos;
 
-        organicos.izquierda = comida;
-        organicos.derecha = jardin;
+        organicos.izquierdo = comida;
+        organicos.derecho = jardin;
 
-        inorganicos.izquierda = plastico;
-        inorganicos.derecha = papel;
+        inorganicos.izquierdo = plastico;
+        inorganicos.derecho = papel;
 
-        // Mostrar árbol en recorrido preorden
-        System.out.println("Clasificación de residuos (recorrido preorden):");
-        preorden(raiz);
-    }
-
-    // Recorrido preorden del árbol
-    public static void preorden(Nodo nodo) {
-        if (nodo != null) {
-            System.out.println(nodo.nombre);
-            preorden(nodo.izquierda);
-            preorden(nodo.derecha);
-        }
+        // imprimir como el mapa
+        System.out.println("        " + residuos.nombre);
+        System.out.println("       /        \\");
+        System.out.println("  " + organicos.nombre + "      " + inorganicos.nombre);
+        System.out.println("   /    \\       /      \\");
+        System.out.println(comida.nombre + "  " + jardin.nombre + "   " + plastico.nombre + "   " + papel.nombre);
     }
 }
