@@ -1,3 +1,11 @@
+// Una tienda de barrio vende productos al por menor. El cajero necesita calcular:
+
+// Precio unitario de un producto (double)
+// Cantidad comprada (int)
+// Descuento aplicado en porcentaje (double)
+// Total a pagar después del descuento
+// Declara las variables, realiza el cálculo y muestra el resultado por consola.
+
 package ejerciciosclase.src;
 
 import java.util.Scanner;
