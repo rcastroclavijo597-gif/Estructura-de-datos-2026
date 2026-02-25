@@ -1,3 +1,10 @@
+/* Un chat guarda el último mensaje enviado. Se usan dos variables String:
+
+ultimoMensaje = "Hola"
+copiaTexto = ultimoMensaje
+Luego copiaTexto se cambia a "¿Cómo estás?"
+Muestra ambas variables y explica en un comentario por qué ultimoMensaje no cambió (inmutabilidad de String). */
+
 package ejerciciosclase.src;
 
 public class ejercicio8 {

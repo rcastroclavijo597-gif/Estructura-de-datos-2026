@@ -1,4 +1,14 @@
-Un sistema universitario necesita registrar la información básica de un estudiante:nombre completo,código(número entero),semestre actual,promedio acumulado y si está matriculado o no.Declara las variables con los tipos de datos apropiados.Asigna valores de ejemplo.Imprime un reporte por consola con el siguiente formato:===Ficha del Estudiante===Nombre:Ana Torres Código:20241001 Semestre:3 Promedio:3.85 Matriculado:true
+/* Modela una jerarquía de tipos de residuos con una estructura de árbol usando nodos:
+
+        Residuos
+       /        \
+  Orgánicos   Inorgánicos
+   /    \       /      \
+Comida Jardín Plástico Papel
+Crea la clase NodoResiduo con un campo nombre y referencias izquierdo y derecho.
+Construye el árbol mostrado.
+Imprime la raíz y todos sus descendientes indicando el nivel. */
+
 package ejerciciosclase.src;
 
 class NodoResiduo {

@@ -1,3 +1,8 @@
+/* Una tienda online guarda las ventas del día en un arreglo de double:
+
+Almacena 7 ventas de ejemplo.
+Calcula e imprime: la venta más alta, la venta más baja y el total del día.
+ */
 package ejerciciosclase.src;
 
 public class ejercicio12 {

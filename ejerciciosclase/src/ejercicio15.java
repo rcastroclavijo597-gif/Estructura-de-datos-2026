@@ -1,3 +1,9 @@
+/* Una estación meteorológica registra la temperatura máxima de cada día de la semana en un arreglo.
+
+Llena el arreglo con 7 valores.
+Calcula el promedio semanal.
+Indica qué días estuvieron por encima del promedio. */
+
 package ejerciciosclase.src;
 
 public class ejercicio15 {
