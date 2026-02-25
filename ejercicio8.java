@@ -1,18 +1,14 @@
 public class ejercicio8 {
     public static void main(String[] args) {
 
-        // declarar variables string
         String ultimoMensaje = "Hola";
         String copiaTexto = ultimoMensaje;
 
-        // mostrar valores iniciales
         System.out.println("ultimo mensaje: " + ultimoMensaje);
         System.out.println("copia texto: " + copiaTexto);
 
-        // cambiar copiaTexto
         copiaTexto = "¿Cómo estás?";
 
-        // mostrar valores despues del cambio
         System.out.println("despues de cambiar copiaTexto");
         System.out.println("ultimo mensaje: " + ultimoMensaje);
         System.out.println("copia texto: " + copiaTexto);

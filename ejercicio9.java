@@ -1,21 +1,16 @@
 public class ejercicio9 {
     public static void main(String[] args) {
 
-        // arreglo con las notas del profesor
-        double[] notasProfesor = {3.5, 2.5, 4.0, 3.0};
+        double[] notasProfesor = { 3.5, 2.5, 4.0, 3.0 };
 
-        // el coordinador recibe la misma referencia del arreglo
         double[] notasCoordinador = notasProfesor;
 
-        // mostrar notas antes de la correccion
         System.out.println("notas antes de la correccion:");
         System.out.println("estudiante 2 (profesor): " + notasProfesor[1]);
         System.out.println("estudiante 2 (coordinador): " + notasCoordinador[1]);
 
-        // el coordinador corrige la nota del estudiante 2
         notasCoordinador[1] = 3.0;
 
-        // mostrar notas despues de la correccion
         System.out.println("notas despues de la correccion:");
         System.out.println("estudiante 2 (profesor): " + notasProfesor[1]);
         System.out.println("estudiante 2 (coordinador): " + notasCoordinador[1]);

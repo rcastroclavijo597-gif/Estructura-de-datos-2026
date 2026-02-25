@@ -1,4 +1,4 @@
-// clase NodoEmpleado
+
 class NodoEmpleado {
     String cargo;
     NodoEmpleado izquierdo;
@@ -15,7 +15,6 @@ public class ejercicio14 {
 
     public static void main(String[] args) {
 
-        // crear nodos
         NodoEmpleado gerente = new NodoEmpleado("Gerente");
 
         NodoEmpleado supervisor1 = new NodoEmpleado("Supervisor1");
@@ -24,14 +23,12 @@ public class ejercicio14 {
         NodoEmpleado analista1 = new NodoEmpleado("Analista1");
         NodoEmpleado analista2 = new NodoEmpleado("Analista2");
 
-        // construir el arbol
         gerente.izquierdo = supervisor1;
         gerente.derecho = supervisor2;
 
         supervisor1.izquierdo = analista1;
         supervisor1.derecho = analista2;
 
-        // imprimir como el mapa de referencia
         System.out.println("         " + gerente.cargo);
         System.out.println("        /       \\");
         System.out.println("   " + supervisor1.cargo + "  " + supervisor2.cargo);
