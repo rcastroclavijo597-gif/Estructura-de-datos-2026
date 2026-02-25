@@ -1,3 +1,5 @@
+package ejerciciosclase.src;
+
 import java.util.Scanner;
 
 //Ficha de un estudiante//

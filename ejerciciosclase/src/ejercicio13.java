@@ -1,3 +1,4 @@
+package ejerciciosclase.src;
 
 class NodoResiduo {
     String nombre;
@@ -11,7 +12,7 @@ class NodoResiduo {
     }
 }
 
-public class ClasificacionResiduos {
+public class ejercicio13 {
 
     public static void main(String[] args) {
 

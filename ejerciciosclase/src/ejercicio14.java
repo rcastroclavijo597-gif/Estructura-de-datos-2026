@@ -1,3 +1,4 @@
+package ejerciciosclase.src;
 
 class NodoEmpleado {
     String cargo;
