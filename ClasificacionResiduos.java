@@ -1,4 +1,4 @@
-// clase NodoResiduo
+
 class NodoResiduo {
     String nombre;
     NodoResiduo izquierdo;
@@ -11,11 +11,10 @@ class NodoResiduo {
     }
 }
 
-public class ClasificacionResiduos  {
+public class ClasificacionResiduos {
 
     public static void main(String[] args) {
 
-        // crear nodos
         NodoResiduo residuos = new NodoResiduo("Residuos");
 
         NodoResiduo organicos = new NodoResiduo("Organicos");
@@ -26,7 +25,6 @@ public class ClasificacionResiduos  {
         NodoResiduo plastico = new NodoResiduo("Plastico");
         NodoResiduo papel = new NodoResiduo("Papel");
 
-        // construir el arbol
         residuos.izquierdo = organicos;
         residuos.derecho = inorganicos;
 
@@ -36,7 +34,6 @@ public class ClasificacionResiduos  {
         inorganicos.izquierdo = plastico;
         inorganicos.derecho = papel;
 
-        // imprimir como el mapa
         System.out.println("        " + residuos.nombre);
         System.out.println("       /        \\");
         System.out.println("  " + organicos.nombre + "      " + inorganicos.nombre);
