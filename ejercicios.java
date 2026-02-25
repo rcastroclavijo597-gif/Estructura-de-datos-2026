@@ -23,6 +23,7 @@ public class ejercicios {
         System.out.println("Semestre:" + semestre);
         System.out.println("Promedio:" + promedio);
         System.out.println("Matriculado:" + matriculado);
-
+        
+        
     }
 }
