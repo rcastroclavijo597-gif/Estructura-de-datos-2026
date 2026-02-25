@@ -12,7 +12,7 @@ public class ejercicio9 {
         notasCoordinador[1] = 3.0;
 
         System.out.println("notas despues de la correccion:");
-        System.out.println("estudiante 2 (profesor): " + notasProfesor[1]);
+        System.out.println("estudiante 2 (profesor): " + notasProfesor);
         System.out.println("estudiante 2 (coordinador): " + notasCoordinador[1]);
 
         /*
