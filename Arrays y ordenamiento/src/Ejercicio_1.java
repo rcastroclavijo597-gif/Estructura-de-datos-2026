@@ -21,29 +21,19 @@ public class Ejercicio_1 {
         for (int i = 0; i <codigo.size() ; i++){
 
             if(codigo.get(i).equals(buscar)){
-                System.out.println("Encontrado, esta en la posicion" + i) ;
+                System.out.println(" Encontrado, esta en la posicion " + i) ;
                 encontrado = true;
                 break;
             }
 
             if(!encontrado){
-                System.out.println("No encontrado");
+                System.out.println(" No encontrado ");
             }
                 
-            
-                
-
-
-
-            
-      
         }
 
             
     }
-
-
-
 
 }
 
