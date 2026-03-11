@@ -11,15 +11,15 @@ alfabéticamente "mayor" que el segundo.
 Resultado esperado: La lista de asistencia impresa en orden alfabético perfecto. */
 
 import java.util.Scanner;
+
 public class Ejercicio4 {
-    
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Ingrese la cantidad de estudiantes: ");
         int n = sc.nextInt();
-        sc.nextLine(); 
+        sc.nextLine();
 
         String[] nombres = new String[n];
 
@@ -35,7 +35,6 @@ public class Ejercicio4 {
 
             String clave = nombres[i];
             int j = i - 1;
-
 
             while (j >= 0 && nombres[j].compareToIgnoreCase(clave) > 0) {
                 nombres[j + 1] = nombres[j];
@@ -57,5 +56,3 @@ public class Ejercicio4 {
         }
     }
 }
-
-

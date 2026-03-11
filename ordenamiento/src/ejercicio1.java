@@ -9,6 +9,7 @@ Resultado esperado: El programa debe imprimir el arreglo totalmente ordenado y, 
  indicando quién obtuvo el Oro (1er lugar), Plata (2do lugar) y Bronce (3er lugar). */
 
 import java.util.Scanner;
+
 public class ejercicio1 {
     public static void main(String[] args) {
 
@@ -27,7 +28,6 @@ public class ejercicio1 {
 
         int n = participantes.length;
 
-        
         for (int i = 0; i < n - 1; i++) {
 
             int minIdx = i;
@@ -56,7 +56,3 @@ public class ejercicio1 {
         Sc.close();
     }
 }
-
-
-
-

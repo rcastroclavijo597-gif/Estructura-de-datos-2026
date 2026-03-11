@@ -11,6 +11,7 @@ Resultado esperado: El programa debe imprimir cuántos intercambios hizo Selecci
 El estudiante debe concluir cuál fue más eficiente para esos datos ingresados por el teclado. */
 
 import java.util.Scanner;
+
 public class Ejercicio5 {
     public static void main(String[] args) {
 
@@ -18,22 +19,18 @@ public class Ejercicio5 {
 
         int[] datos = new int[6];
 
-        
         System.out.println("Ingrese 6 numeros enteros:");
         for (int i = 0; i < 6; i++) {
             System.out.print("Numero " + (i + 1) + ": ");
             datos[i] = sc.nextInt();
         }
 
-        
         int[] seleccion = datos.clone();
         int[] insercion = datos.clone();
 
-        
         int swapsSeleccion = 0;
         int movimientosInsercion = 0;
 
-        
         for (int i = 0; i < seleccion.length - 1; i++) {
 
             int min = i;
@@ -49,7 +46,7 @@ public class Ejercicio5 {
                 seleccion[i] = seleccion[min];
                 seleccion[min] = temp;
 
-                swapsSeleccion++; 
+                swapsSeleccion++;
             }
         }
 
@@ -61,13 +58,12 @@ public class Ejercicio5 {
             while (j >= 0 && insercion[j] > clave) {
                 insercion[j + 1] = insercion[j];
                 j--;
-                movimientosInsercion++; 
+                movimientosInsercion++;
             }
 
             insercion[j + 1] = clave;
         }
 
-        
         System.out.println("\nResultados del analisis:");
         System.out.println("Intercambios en Seleccion: " + swapsSeleccion);
         System.out.println("Movimientos en Insercion: " + movimientosInsercion);
@@ -83,5 +79,3 @@ public class Ejercicio5 {
         sc.close();
     }
 }
-
-

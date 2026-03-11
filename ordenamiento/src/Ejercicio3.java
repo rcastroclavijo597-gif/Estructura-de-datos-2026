@@ -13,7 +13,6 @@ Resultado esperado: Mostrar el arreglo original y el arreglo final ordenado desp
 import java.util.Scanner;
 
 public class Ejercicio3 {
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -23,25 +22,21 @@ public class Ejercicio3 {
 
         int[] pesos = new int[n];
 
-        
         for (int i = 0; i < n; i++) {
             System.out.print("Ingrese el peso del paquete " + (i + 1) + ": ");
             pesos[i] = sc.nextInt();
         }
 
-        
         System.out.println("\nArreglo original:");
         mostrar(pesos);
 
         for (int gap = n / 2; gap > 0; gap = gap / 2) {
 
-            
             for (int i = gap; i < n; i++) {
 
                 int temp = pesos[i];
                 int j = i;
 
-                
                 while (j >= gap && pesos[j - gap] > temp) {
                     pesos[j] = pesos[j - gap];
                     j = j - gap;
@@ -51,14 +46,12 @@ public class Ejercicio3 {
             }
         }
 
-    
         System.out.println("\nArreglo ordenado:");
         mostrar(pesos);
 
         sc.close();
     }
 
-    
     public static void mostrar(int[] arreglo) {
         System.out.print("[");
         for (int i = 0; i < arreglo.length; i++) {
