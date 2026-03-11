@@ -11,6 +11,7 @@ Visualización Paso a Paso: En cada ciclo del ordenamiento, el programa debe imp
 import java.util.Scanner;
 
 public class Ejercicio2 {
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -21,49 +22,25 @@ public class Ejercicio2 {
         int[] libros = new int[n];
 
         for (int i = 0; i < n; i++) {
+
             System.out.print("Ingrese el ISBN del libro " + (i + 1) + ": ");
-            libros[i] = sc.nextInt();
+            int nuevo = sc.nextInt();
 
-            for (int j = 1; j < n; j++) {
+            int pos = n - 1 - i;
+            libros[pos] = nuevo;
 
-                int clave = libros[i];
-                int m = j - 1;
+            int j = pos;
 
-                while (m >= 0 && libros[m] > clave) {
-                    libros[m + 1] = libros[m];
-                    m--;
-                }
-
-                libros[j + 1] = clave;
-                System.out.println("Paso " + i + ":");
-                mostrar(libros);
+            while (j < n - 1 && libros[j] > libros[j + 1]) {
+                int temp = libros[j];
+                libros[j] = libros[j + 1];
+                libros[j + 1] = temp;
+                j++;
             }
 
-        }
-
-        System.out.println("\nArreglo ordenado final;");
-        
-
-        System.out.println("\nArreglo original:");
-        mostrar(libros);
-
-        for (int i = 1; i < n; i++) {
-
-            int clave = libros[i];
-            int j = i - 1;
-
-            while (j >= 0 && libros[j] > clave) {
-                libros[j + 1] = libros[j];
-                j--;
-            }
-
-            libros[j + 1] = clave;
-            System.out.println("Paso " + i + ":");
+            System.out.println("Estado del arreglo:");
             mostrar(libros);
         }
-
-        System.out.println("\nArreglo ordenado final:");
-        mostrar(libros);
 
         sc.close();
     }
