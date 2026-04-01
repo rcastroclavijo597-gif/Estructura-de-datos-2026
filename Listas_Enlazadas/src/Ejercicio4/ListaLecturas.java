@@ -40,7 +40,6 @@ public class ListaLecturas {
                 " | Hora: " + max.hora);
     }
 
-    // (opcional como siempre)
     public void mostrarLecturas() {
         Lectura actual = cabeza;
 

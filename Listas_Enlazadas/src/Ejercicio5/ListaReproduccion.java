@@ -3,7 +3,7 @@ package Ejercicio5;
 public class ListaReproduccion {
 
     Cancion cabeza;
-    Cancion actual; // canción actual
+    Cancion actual;
 
     public ListaReproduccion() {
         this.cabeza = null;
@@ -51,7 +51,6 @@ public class ListaReproduccion {
         System.out.println("Duracion total: " + minutos + ":" + (segundos < 10 ? "0" + segundos : segundos));
     }
 
-    // (opcional)
     public void mostrarCanciones() {
         Cancion temp = cabeza;
 

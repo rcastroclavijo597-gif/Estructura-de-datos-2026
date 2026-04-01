@@ -40,10 +40,8 @@ public class ColaVuelos {
 
             if (actual.numeroVuelo.equals(numeroVuelo)) {
 
-                // lo quitamos de su posición
                 anterior.siguiente = actual.siguiente;
 
-                // lo movemos al inicio
                 actual.siguiente = cabeza;
                 cabeza = actual;
 
@@ -58,7 +56,6 @@ public class ColaVuelos {
         System.out.println("Vuelo no encontrado.");
     }
 
-    // (opcional como el tren)
     public void mostrarVuelos() {
         Vuelo actual = cabeza;
 
