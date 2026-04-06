@@ -16,3 +16,4 @@ public class Lectura {
         this.hora = hora;
         this.siguiente = null;
     }
+}
