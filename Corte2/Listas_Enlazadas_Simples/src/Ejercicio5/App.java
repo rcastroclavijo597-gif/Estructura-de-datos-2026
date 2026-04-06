@@ -37,6 +37,23 @@ public class App {
             switch (opcion) {
 
                 case 1:
+                    System.out.print("Titulo: ");
+                    sc.nextLine();
+                    String titulo1 = sc.nextLine();
+
+                    System.out.print("Artista: ");
+                    String artista1 = sc.nextLine();
+
+                    System.out.print("Duracion (segundos): ");
+                    int duracion1 = sc.nextInt();
+
+                    sc.nextLine();
+                    System.out.print("Genero: ");
+                    String genero1 = sc.nextLine();
+                    Cancion nueva1 = new Cancion(titulo1, artista1, duracion1, genero1);
+                    lista.agregarAlFinal(nueva1);
+                    break;
+
                 case 2:
                     System.out.print("Titulo: ");
                     sc.nextLine();
@@ -54,12 +71,7 @@ public class App {
 
                     Cancion nueva = new Cancion(titulo, artista, duracion, genero);
 
-                    if (opcion == 1) {
-                        lista.agregarAlFinal(nueva);
-                    } else {
-                        lista.agregarSiguiente(nueva);
-                    }
-                    break;
+                    lista.agregarSiguiente(nueva);
 
                 case 3:
                     lista.mostrarDuracionTotal();
