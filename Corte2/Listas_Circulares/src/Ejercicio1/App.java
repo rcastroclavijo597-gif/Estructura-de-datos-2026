@@ -1,4 +1,3 @@
-
 /* 1. Ruleta de Sorteos (Sistema de Rifa Digital)
 Una empresa organiza una rifa y quiere un sistema que “gire” la rueda de participantes hasta detenerse en un ganador.
 
