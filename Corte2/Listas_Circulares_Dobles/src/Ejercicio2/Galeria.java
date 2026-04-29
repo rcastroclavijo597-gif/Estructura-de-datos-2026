@@ -9,4 +9,10 @@ public class Galeria {
         this.cola = null;
     }
 
+    public boolean estavacia() {
+        return cabeza == null;
+    }
+
+    public agregarFotografia()
+
 }
