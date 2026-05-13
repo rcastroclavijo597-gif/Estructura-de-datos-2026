@@ -18,7 +18,6 @@ public class App {
         PilaContenedores muelle = new PilaContenedores();
         Scanner scanner = new Scanner(System.in);
 
-        // Datos de prueba
         muelle.push(new Contenedor("CONT-001", "Maersk", 25.5, "Electrónicos"));
         muelle.push(new Contenedor("CONT-002", "Evergreen", 30.0, "Textiles"));
         muelle.push(new Contenedor("CONT-003", "MSC", 18.2, "Alimentos"));
