@@ -44,4 +44,9 @@ INNER JOIN staff AS s
 ON s.staff_id = p.staff_id
 
 
+SELECT ca.name, (SELECT COUNT(i.film_id) FROM inventory AS i WHERE i.film_id = fc.film_id) AS cantidad_film
+FROM category AS ca
+INNER JOIN film_category AS fc ON fc.category_id = ca.category_id
 
+SELECT ca.name, (SELECT COUNT(i.film_id) FROM inventory AS i inner JOIN film_category as fc on 
+fc.film_id = i.film_id where fc.category_id = ca.category_id) AS cantidad_alquiladas from category AS ca ;
