@@ -12,8 +12,6 @@ public class ArbolTemperaturas {
         return raiz == null;
     }
 
-    // --- INSERTAR ---
-
     private Registro insertar(Registro nodo, double temperatura, String fecha, String estacion, double humedad) {
         if (nodo == null)
             return new Registro(temperatura, fecha, estacion, humedad);
@@ -32,8 +30,6 @@ public class ArbolTemperaturas {
         raiz = insertar(raiz, temperatura, fecha, estacion, humedad);
     }
 
-    // --- BUSCAR ---
-
     private Registro buscar(Registro nodo, double temperatura) {
         if (nodo == null)
             return null;
@@ -49,8 +45,6 @@ public class ArbolTemperaturas {
     public Registro buscar(double temperatura) {
         return buscar(raiz, temperatura);
     }
-
-    // --- RECORRIDOS ---
 
     private void inOrden(Registro nodo) {
         if (nodo != null) {
@@ -86,8 +80,6 @@ public class ArbolTemperaturas {
         preOrden(raiz);
     }
 
-    // --- ALTURA Y HOJAS ---
-
     private int altura(Registro nodo) {
         if (nodo == null)
             return -1;
@@ -110,22 +102,15 @@ public class ArbolTemperaturas {
         return contarHojas(raiz);
     }
 
-    // --- RETO: contarSobre(umbral) ---
-    // Cuenta registros cuya temperatura sea estrictamente mayor al umbral.
-    // Aprovecha la propiedad del BST: si nodo.temperatura <= umbral,
-    // el subárbol izquierdo entero también estará por debajo — se poda.
-
     private int contarSobre(Registro nodo, double umbral) {
         if (nodo == null)
             return 0;
 
         if (nodo.temperatura <= umbral) {
-            // Este nodo y todo su subárbol izquierdo quedan descartados.
-            // Solo puede haber candidatos a la derecha.
+
             return contarSobre(nodo.derecho, umbral);
         } else {
-            // Este nodo supera el umbral; el subárbol derecho también lo supera.
-            // Aún hay que revisar el izquierdo porque puede tener valores > umbral.
+
             return 1 + contarSobre(nodo.derecho, umbral) + contarSobre(nodo.izquierdo, umbral);
         }
     }
